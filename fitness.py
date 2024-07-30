@@ -3,7 +3,8 @@ storage_data ={}
 def accept_package (pocket):
     if check_correct_data(pocket):
         time,steps = pocket
-        storage_data(time,steps)
+        store_data(time,steps)
+        display_summary(time, steps)
         return storage_data
 def check_correct_data(pocket):
     if len(pocket)!=2 :
